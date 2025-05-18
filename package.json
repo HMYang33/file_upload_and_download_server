@@ -1,0 +1,18 @@
+{
+ "name": "file_upload_handler",
+ "module": "index.ts",
+ "type": "module",
+ "private": true,
+ "scripts": {
+  "start": "bun run index.js",
+  "build": "npm run buildexe & npm run buildjs",
+  "buildexe": "bun build ./index.js --outfile ./dist/mycli.exe --compile",
+  "buildjs": "bun build ./index.js --outfile ./dist/mycli.js"
+ },
+ "devDependencies": {
+  "@types/bun": "latest"
+ },
+ "peerDependencies": {
+  "typescript": "^5"
+ }
+}
