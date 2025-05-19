@@ -5,14 +5,15 @@
  "private": true,
  "scripts": {
   "start": "bun run index.js",
-  "build": "npm run buildexe & npm run buildjs",
-  "buildexe": "bun build ./index.js --outfile ./dist/mycli.exe --compile",
-  "buildjs": "bun build ./index.js --outfile ./dist/mycli.js"
+  "build": "node build_run.js"
  },
  "devDependencies": {
   "@types/bun": "latest"
  },
  "peerDependencies": {
   "typescript": "^5"
+ },
+ "dependencies": {
+  "tcp-port-used": "^1.0.2"
  }
 }
